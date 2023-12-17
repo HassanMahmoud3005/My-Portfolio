@@ -1,0 +1,55 @@
+.home{
+    background:linear-gradient(200deg  , black ,black, rgb(34, 11, 56) );
+    overflow-x:hidden;
+    min-height: 100vh;
+}
+
+
+.imgHome{
+    filter: drop-shadow(0 0 20px rgb(34, 11, 56));
+  border-radius: 50%;
+}
+
+
+.iconHome{
+    color: white;
+    cursor: pointer;
+    transition: .8s cubic-bezier(.32,2,.55,.27) !important;
+}
+
+
+.iconHome:hover{
+    color: blueviolet;
+    border: 1px solid blueviolet;
+    border-radius: 50%;
+    padding: 5px;
+    
+}
+
+.btnContainer .activebtn{
+background-color: rgb(132, 0, 255);
+color: white;
+transform: scale(1.1);
+
+}
+.btnContainer .activebtn:hover{
+background-color: rgb(132, 0, 255);
+color: white;
+
+}
+.btnContainer .origan{
+    outline: 1px solid rgb(132, 0, 255) !important;
+    color: white;
+
+}
+.btnContainer .origan:hover{
+    background-color: rgb(132, 0, 255) !important;
+    color: white;
+    transform: scale(1.1);
+    transition: .5s cubic-bezier(.32,2,.55,.27) !important;
+
+    }
+
+
+
+

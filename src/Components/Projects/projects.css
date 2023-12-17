@@ -1,0 +1,127 @@
+.projects{
+    background:linear-gradient(320deg  , black ,black, rgb(34, 11, 56) , black , black );
+    overflow-x: hidden;
+}
+
+
+.projects .item{
+    border: 5px blueviolet;
+    border-style: ridge;
+    background: black;
+    transform-style:preserve-3d ;
+    transition: all 1s !important;
+    cursor: pointer;
+    overflow: hidden;
+    height: max-content
+
+}
+ .layerBtn{
+    top: 180%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .5s;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+.backcolor{
+width: 850px;
+height: 850px;
+background:linear-gradient(320deg  , black ,black, rgb(34, 11, 56) , black , black );
+top: 0;
+left: 0;
+animation: rotate 5s infinite linear;
+scale: 1.5;
+opacity: 0;
+transition: .2s;
+
+
+}
+
+
+@keyframes rotate{
+    100%{transform: rotateZ(360deg);}
+}
+
+
+
+.item:hover .layerBtn{
+top: 0% !important;
+
+}
+.item:hover .backcolor{
+opacity: 1;
+}
+
+.item .origan{
+    outline: 1px solid rgb(109, 2, 209);
+    color: white;
+    transition: .5s cubic-bezier(.32,2,.55,.27);
+    position: relative;
+    z-index: 5;
+}
+.item .explanProject{
+    position: relative;
+    z-index: 5;
+}
+
+
+
+.item .origan:hover{
+    background-color: rgb(109, 2, 209);
+    color: white;
+    scale: 1.05;
+    
+    }
+
+    .timer{
+        background-size: cover;
+        background-attachment: fixed;
+        z-index: 1;
+        overflow: hidden;
+        filter: drop-shadow(0 0 20px rgba(93, 7, 173, 0.718));
+    }
+
+    .timer .text{
+        position: absolute;
+        z-index: 500;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    
+
+    .imgTimer{
+        background-image: url("../../image/timer.webp");
+        position: relative;
+        z-index: 5;
+        height: 70vh;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+   .timer .timerColor{
+    background:linear-gradient(320deg  , black ,black, rgba(93, 7, 173, 0.718), black,rgba(93, 7, 173, 0.718) ,black,rgba(93, 7, 173, 0.718),  black , black ) ;
+        animation: revolve 5s infinite linear;
+        z-index: 50;
+        height: 70vh;
+        width: 100%;
+        top: 0;
+        left: 0;
+        scale: 5;
+        
+
+        
+
+    }
+
+    
+@keyframes revolve{
+    100%{transform: rotateZ(360deg);}
+}
+
+.border{
+    color: orangered;
+    filter: drop-shadow(0 0 10px rgb(1, 35, 58));
+    
+}

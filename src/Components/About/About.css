@@ -1,0 +1,23 @@
+    .about{
+        background:linear-gradient(320deg  , black ,black, rgb(34, 11, 56) );
+    }
+
+
+    .image{
+        width: 300px;
+        height: 300px;
+        background-color: rgb(69, 19, 116);
+    }
+
+
+    .imgAbout{
+        filter:drop-shadow(0 0 4px #8400FF) saturate(1.4);
+        animation: floating 2s infinite alternate
+    }
+
+    @keyframes floating{
+        100%{
+            transform:translateY(-20px)
+        }
+    }
+

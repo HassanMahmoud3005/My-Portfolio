@@ -1,0 +1,73 @@
+.blog {
+  min-height: 50vh;
+  background:linear-gradient(320deg  , black , rgba(93, 7, 173, 0.718) ) ;
+
+}
+
+.blog .card {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s linear;
+}
+
+.blog .card:hover .card-title:after{
+width: 30%;
+}
+
+.blog .card:hover button {
+  top: 86%;
+  transition: 0.5s linear;
+}
+
+.blog .card button {
+  position: absolute;
+  top: 100%;
+  right: 1%;
+  margin: 10px;
+  transition: 0.5s linear;
+  font-family: "Rowdies";
+  font-size: 20px;
+}
+
+.blog .card button:hover {
+  background-color: white !important;
+  color: black !important;
+}
+
+ .blog .card-body {
+  background-color: black;
+  min-height: 200px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.blog .card-title {
+  color: #8A2BE2 !important;
+  position: relative;
+  transition: .5s;
+  font-weight: 400;
+  white-space: nowrap;
+  filter: drop-shadow(0 0 10px black);
+
+  
+}
+
+
+.card-title:after{
+  content: " ";
+  position: absolute;
+  top: 105%;
+  left:-5%;
+  height: 3px;
+  width: 0%;
+  border-bottom: 2px solid blueviolet;
+  transition: .5s;
+
+}
+
+ .card-text {
+  color: honeydew;
+  font-size: 16px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
+}

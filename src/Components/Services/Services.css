@@ -1,0 +1,90 @@
+.services {
+  overflow: hidden;
+  background-color: black;
+}
+
+.timerColor {
+  background: linear-gradient(
+    320deg,
+    black,
+    black,
+    rgba(74, 6, 137, 0.718),
+    black,
+    rgba(93, 7, 173, 0.718),
+    black,
+    rgba(93, 7, 173, 0.718),
+    black,
+    black
+  );
+  animation: revolve 5s infinite linear;
+  z-index: 50;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  scale: 5;
+}
+
+@keyframes revolve {
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+
+.services .item{
+  height: 350px !important;
+  position: relative !important;
+  border: 5px blueviolet;
+  border-style: ridge;
+  background: black;
+  transform-style:preserve-3d ;
+  transition: all 1s !important;
+  cursor: pointer;
+  overflow: hidden;
+  min-height: 5vh;
+}
+
+.services .item:hover .layer{
+  top: 88%;
+}
+
+.services .layer{
+  height: 300px;
+  position: absolute;
+  border: 5px solid rgba(93, 7, 173, 0.718);
+  width: 100%;
+  top: 100%;
+  transition: .5s cubic-bezier(.32,2,.55,.27);
+  background:linear-gradient(290deg,black,rgba(93, 7, 173, 0.718),black);
+
+
+}
+
+
+.services .layerBtn{
+  background:linear-gradient(145deg,black,rgba(93, 7, 173, 0.718),black,black);
+position: relative;
+
+}
+
+.icon{
+  color: white;
+  transition: color .5s cubic-bezier(.32,2,.55,.27);
+  transition: scale .5s .5s cubic-bezier(.32,2,.55,.27);
+}
+.item:hover .icon{
+color: rgb(126, 4, 240);
+scale: 1.2;
+}
+
+.title{
+  color:  rgb(126, 4, 240);
+  transition: color .5s cubic-bezier(.32,2,.55,.27);
+
+}
+.item:hover .title{
+  color:  white;
+  transition: color .5s cubic-bezier(.32,2,.55,.27);
+
+}
